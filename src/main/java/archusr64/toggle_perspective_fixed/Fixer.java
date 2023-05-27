@@ -1,11 +1,8 @@
 package archusr64.toggle_perspective_fixed;
 
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.client.event.MouseEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent.MouseInputEvent;
 import net.minecraft.client.settings.GameSettings;
@@ -16,8 +13,6 @@ import net.minecraft.entity.Entity;
 public class Fixer {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        // some example code
-        System.out.println("DIRT BLOCK >> " + Blocks.dirt.getUnlocalizedName());
         MinecraftForge.EVENT_BUS.register(this);
     }
 
